@@ -138,3 +138,6 @@ const config = {
 };
 
 export default config;
+
+/* $env:GIT_USER = "AmeliaHuang325"
+npm run deploy */
