@@ -2,46 +2,16 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Background
 
-Let's discover **Docusaurus in less than 5 minutes**.
+This document outlines the draft recommendations for the economic systems. Recommendations are structured into an overarching primary recommendation (bold font) followed by a line listing of supportive secondary and tertiary recommendations.
 
-## Getting Started
+## Collaboratively Addressing Public Health Emergencies
 
-Get started by **creating a new site**.
+The COVID-19 pandemic illuminated longstanding inequities that if left unaddressed will continue to leave people behind during future public health emergencies. Through an award from the New York City Economic Development Corporation, Columbia University is launching PRI with key partner the City University of New York Graduate School of Public Health & Health Policy (CUNY SPH) and a consortium of academic, community, government, and corporate partners. In coordination with the NYC Department of Health and Mental Hygiene and NYC Emergency Management, PRI will work hand-in-hand with New Yorkers in communities across the five boroughs to enhance their capacity to develop locally tailored health solutions, information, and resources to prepare for, respond to, and recover from future health crises.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## A Robust Multisector Partnership
 
-### What you'll need
+PRI includes diverse partnerships with dozens of nonprofit, community, faith-based, research and corporate entities that responded to COVID-19 across NYC and are committed to PRI’s whole-of-society approach.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Together, this diverse group of contributors brings the necessary resources, expertise, commitment, and vision to the critical task of equipping New York City to prepare and respond to future public health emergencies, and to invest in a more robust infrastructure, resulting in greater health equity among New Yorkers.

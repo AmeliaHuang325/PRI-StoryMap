@@ -1,52 +1,44 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
+// `@type` JSDoc annotations allow editor autocompletion and type checking.
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  // Site basic info
+  title: 'Pandemic Response Institute', // Use your desired title here
+  tagline: 'New York City’s Whole-of-Society’s Response to COVID-19',
+  favicon: 'img/logo-pri.png',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // Deployment settings for GitHub Pages
+  url: 'https://ameliahuang325.github.io', // Your GitHub Pages URL
+  baseUrl: '/PRI-StoryMap/',                // Base URL for your repo
+  organizationName: 'AmeliaHuang325',        // Your GitHub username
+  projectName: 'PRI-StoryMap',               // Your repository name
+  trailingSlash: false,
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  // Handling broken links
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Internationalization configuration
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
 
+  // Presets configuration
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/AmeliaHuang325/PRI-StoryMap/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -54,51 +46,48 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+            'https://github.com/AmeliaHuang325/PRI-StoryMap/edit/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
   ],
 
+  // Theme configuration
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'PRI Project',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo-pri.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Recommendation List',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          /*{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/AmeliaHuang325/PRI-StoryMap',
             label: 'GitHub',
             position: 'right',
-          },
+          },*/
         ],
       },
       footer: {
         style: 'dark',
-        links: [
+        /* links: [
           {
             title: 'Docs',
             items: [
@@ -134,11 +123,11 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/AmeliaHuang325/PRI-StoryMap',
               },
             ],
           },
-        ], 
+        ],*/
         copyright: `Copyright © ${new Date().getFullYear()} Shuyang Huang`,
       },
       prism: {
@@ -148,15 +137,4 @@ const config = {
     }),
 };
 
-/* export default config; */
-
-export default {
-  // ...
-  url: 'https://ameliahuang325.github.io', // Your GitHub Pages URL
-  baseUrl: '/PRI-StoryMap/',                // Base URL should be your repo name as a subdirectory
-  projectName: 'PRI-StoryMap',               // Your repository name
-  organizationName: 'AmeliaHuang325',        // Your GitHub username
-  trailingSlash: false,
-  // ...
-};
-
+export default config;
