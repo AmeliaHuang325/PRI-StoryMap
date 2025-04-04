@@ -138,8 +138,8 @@ const config = {
               },
             ],
           },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        ], 
+        copyright: `Copyright © ${new Date().getFullYear()} Shuyang Huang`,
       },
       prism: {
         theme: prismThemes.github,
@@ -148,4 +148,15 @@ const config = {
     }),
 };
 
-export default config;
+/* export default config; */
+
+export default {
+  // ...
+  url: 'https://ameliahuang325.github.io', // Your GitHub Pages URL
+  baseUrl: '/PRI-StoryMap/',                // Base URL should be your repo name as a subdirectory
+  projectName: 'PRI-StoryMap',               // Your repository name
+  organizationName: 'AmeliaHuang325',        // Your GitHub username
+  trailingSlash: false,
+  // ...
+};
+
