@@ -29,6 +29,21 @@ const config = {
     locales: ['en'],
   },
 
+  // Add the search theme from @easyops-cn/docusaurus-search-local
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      {
+        hashed: true,
+        // Optionally, if you need multi-language support:
+        // language: ["en", "zh"],
+        // If you're using `noIndex: true`, uncomment the following:
+        // forceIgnoreNoIndex: true,
+      },
+    ],
+  ],
+
   // Presets configuration
   presets: [
     [
