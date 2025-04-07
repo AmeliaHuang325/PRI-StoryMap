@@ -52,8 +52,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/AmeliaHuang325/PRI-StoryMap/edit/main/',
+          // editUrl: 'https://github.com/AmeliaHuang325/PRI-StoryMap/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -61,8 +60,7 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:
-            'https://github.com/AmeliaHuang325/PRI-StoryMap/edit/main/',
+          // editUrl:'https://github.com/AmeliaHuang325/PRI-StoryMap/edit/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -78,7 +76,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/PRI-social-card.png',
       navbar: {
         title: 'PRI Project',
         logo: {

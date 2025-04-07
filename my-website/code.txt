@@ -1,0 +1,4 @@
+npm install --save @easyops-cn/docusaurus-search-local
+
+$env:GIT_USER = "AmeliaHuang325"
+npm run deploy
